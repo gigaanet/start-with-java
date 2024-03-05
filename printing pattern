@@ -1,0 +1,170 @@
+/* import java.util.*;
+public class pattern {
+public static void printPattern(int n)
+{
+int i, j;
+for (i = 1; i <= n; i++) {
+
+for (j = 1; j <= i; j++) {
+System.out.print("*");
+}
+
+System.out.println();
+}
+}
+public static void main(String args[])
+{
+int n = 6;
+printPattern(n);
+}
+}
+
+*
+**
+***
+****
+*****
+******
+
+*/
+
+/*import java.util.*;
+
+public class pattern {
+
+public static void printPattern(int n)
+{
+int i, j;
+for (i = n; i >= 1; i--) {
+
+for (j = 1; j <= i; j++) {
+System.out.print("*");
+}
+
+System.out.println();
+}
+}
+
+public static void main(String args[])
+{
+int n = 6;
+printPattern(n);
+}
+}
+
+******
+*****
+****
+***
+**
+*
+*/
+
+/*
+import java.util.*;
+public class pattern {
+public static void printPattern(int n)
+{
+int i, j;
+for (i = 0; i < n; i++) {
+for (j = 0; j < n; j++) {
+if (i == 0 || j == 0 || i == n - 1
+|| j == n - 1) {
+System.out.print(" ");
+}
+else {
+System.out.print("*");
+}
+}
+System.out.println();
+}
+}
+public static void main(String args[])
+{
+int n = 6;
+printPattern(n);
+}
+}
+ 
+*/
+// Java program that accepts
+// array input from the user.
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int c;
+        int arr[][]=new int[n][];
+        for(int i=0;i<=n;i++){
+            c=s.nextInt();
+            arr[i]=new int[c];
+        }
+        for(int i=0;i<=n;i++){
+            for(int j:arr[i]){
+                System.out.println(j+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+/*
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        int l,m,n;
+        System.out.println("enter 1st trainer levels");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        System.out.println("enter for second trainer");
+        int d=sc.nextInt();
+        int e=sc.nextInt();
+        int f=sc.nextInt();
+        System.out.println("enter for third");
+        int g=sc.nextInt();
+        int h=sc.nextInt();
+        int i=sc.nextInt();
+     
+        l=(a+b+c/3);
+        m=(d+e+f/3);
+        n=(g+h+i/3);
+       
+        System.out.println("avg of first trainer"+(l));
+        System.out.println("avg of second trainer"+(m));
+        System.out.println("avg of third trainer"+(n));
+       
+        if(l>75){
+            System.out.println("trainer 1 is fit");
+        }
+        if(m>75){
+            System.out.println("trainer 2 is fit");
+        }
+        if(n>75){
+            System.out.println("trainer 3 is fit");
+        }
+        else{
+            System.out.println("none of the above trainer is fit");
+        }
+    }
+   
+}
+
+enter 1st trainer levels
+98
+90
+99
+enter for second trainer89
+90
+98
+enter for third
+87
+87
+89
+avg of first trainer131
+avg of second trainer181avg of third trainer123
+trainer 1 is fit
+trainer 2 is fit
+trainer 3 is fit
+/*
